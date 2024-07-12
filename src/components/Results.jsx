@@ -1,9 +1,10 @@
 import React from 'react'
+import ReactionIcon from '../icons/ReactionIcon'
 
 export const Results = () => {
   return (
-    <div>
-      Results
+    <div className='text-4xl'>
+      <ReactionIcon />
     </div>
   )
 }
