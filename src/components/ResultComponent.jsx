@@ -55,14 +55,14 @@ export const ResultComponent = () => {
 
             return (
               <Styled.SummaryItem key={index} $bgColor={color.bg} $textColor={color.text}>
-                <div className='flex'>
+                <Styled.SummaryItemContainer className='flex gap-2'>
                   <SummaryIcon />
                   <Styled.SummaryCategory>{item.category}</Styled.SummaryCategory>
-                </div>
-                <div className='flex'>
+                </Styled.SummaryItemContainer>
+                <Styled.SummaryItemContainer>
                   <Styled.SummaryTotalScore>{item.score}</Styled.SummaryTotalScore>
                   <Styled.SummaryMaxScore>/ 100</Styled.SummaryMaxScore>
-                </div>
+                </Styled.SummaryItemContainer>
 
               </Styled.SummaryItem>
             )

@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section.attrs({
-  className: 'h-screen flex justify-center items-center font-Hanken'
+  className: 'h-screen flex justify-center items-center font-Hanken mt-8'
 })``;
 
 export const Container = styled.div.attrs({
-  className: 'flex flex-col gap-4 md:flex-row border-2 border-black p-6'
+  className: 'flex flex-col rounded-2xl shadow-xl items-center md:flex-row'
 
 })``;
 
 // Left Section
 
 export const LeftSection = styled.div.attrs({
-  className: 'flex flex-col w-60 items-center rounded-2xl px-6 py-8 gap-6 bg-gradient-to-b from-BGG-LightSlateBlue to-BGG-RoyalBlue'
+  className: 'flex flex-col w-80 items-center rounded-2xl px-6 py-8 gap-6 bg-gradient-to-b from-BGG-LightSlateBlue to-BGG-RoyalBlue md:w-60'
 })``;
 
 export const LeftSectionTitle = styled.h1.attrs({
@@ -20,7 +20,7 @@ export const LeftSectionTitle = styled.h1.attrs({
 })``;
 
 export const ScoreContainer = styled.div.attrs({
-  className: 'flex flex-col items-center gap-4'
+  className: 'flex flex-col items-center gap-4 my-4'
 })``;
 
 export const ScoreCircle = styled.div.attrs({
@@ -51,7 +51,7 @@ export const ScoreComment = styled.p.attrs({
 // Right Section
 
 export const RightSection = styled.div.attrs({
-  className: 'rounded-r-2xl bg-Neutral-White py-4 px-3 w-60 flex flex-col justify-between'
+  className: 'rounded-r-2xl bg-Neutral-White flex flex-col justify-between m-4 py-4 px-3 w-80 gap-4 md:w-60'
 })``;
 
 export const RightSectionTitle = styled.h1.attrs({
@@ -61,6 +61,10 @@ export const RightSectionTitle = styled.h1.attrs({
 export const SummaryItem = styled.div.attrs(({$bgColor, $textColor}) => ({
   className: `flex rounded-md items-center justify-between px-4 text-sm font-semibold py-2 ${$bgColor} ${$textColor}`
 }))``;
+
+export const SummaryItemContainer = styled.div.attrs({
+  className: 'flex gap-2'
+})``;
 
 export const SummaryCategory = styled.h3.attrs({
   className: ''
@@ -75,5 +79,5 @@ export const SummaryMaxScore = styled.p.attrs({
 })``;
 
 export const ContinueButton = styled.div.attrs({
-  className: 'bg-Neutral-DarkGrayBlue rounded-full py-3 text-center text-Neutral-PaleBlue text-xs hover:bg-gradient-to-t from-BGG-LightSlateBlue to-BGG-RoyalBlue'
+  className: 'bg-Neutral-DarkGrayBlue rounded-full py-3 mt-4 text-center text-Neutral-PaleBlue text-xs hover:bg-gradient-to-t from-BGG-LightSlateBlue to-BGG-RoyalBlue'
 })``;
